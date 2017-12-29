@@ -1,5 +1,5 @@
 """
-n children have got m pieces of candy. They want to eat as much candy as they can, but each child must eat exactly the same amount of candy as any other child. Determine how many pieces of candy will be eaten by all the children together. 
+n children have got m pieces of candy. They want to eat as much candy as they can, but each child must eat exactly the same amount of candy as any other child. Determine how many pieces of candy will be eaten by all the children together.
 Individual pieces of candy cannot be split.
 Example
 For n = 3 and m = 10, the output should be
@@ -18,5 +18,11 @@ Input/Output
     [output] integer
     The total number of pieces of candy the children will eat provided they eat as much as they can and all children eat the same amount.
 """
+
 def candies(n, m):
     return m-m%n
+
+"""
+Reasoning~
+Because each child must eat the same amount of candy, we can divide the total amount of candy by the number of children. The remaining candies, or what would be unfairly distributed, is then subtracted from the total and what's left is the same number of pieces for each child.
+"""

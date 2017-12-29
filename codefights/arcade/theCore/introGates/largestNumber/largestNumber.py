@@ -11,12 +11,14 @@ Input/Output
    [output] integer
    The largest integer of length n.
 """
+
 def largestNumber(n):
     return int(n*"9")
+
 """
 Reasoning ~
-Because n indicates the number of digits to be produced in our result,
-we can take advantage of Python's simplicity by multiplying n 
-against string "9" then converting the result to an integer through
+Because n indicates the number of digits to be in our product,
+we can take advantage of Python's easy string manipulation by multiplying n
+against string "9". Then we can convert the result to an integer through
 the built-in type int().
 """
