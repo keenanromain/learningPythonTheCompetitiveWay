@@ -24,5 +24,7 @@ def candies(n, m):
 
 """
 Reasoning~
-Because each child must eat the same amount of candy, we can divide the total amount of candy by the number of children. The remaining candies, or what would be unfairly distributed, is then subtracted from the total and what's left is the same number of pieces for each child.
+Because each child must eat the same amount of candy, we can divide the total amount of candy by the number of children.
+The remaining candies, or what would be unfairly distributed, is then subtracted from the total and what's left is the
+same number of pieces for each child.
 """

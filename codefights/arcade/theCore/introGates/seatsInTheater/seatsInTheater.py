@@ -33,6 +33,9 @@ def seatsInTheater(nCols, nRows, col, row):
 
 """
 Reasoning~
-We can determine the number of seats within the matrix (refer to the corresponding image for a nice visualization) by substracting the number of columns and rows against the column and row where we are seated, then multiplying the two differences together. However, because we are mindful of the people within out column (but not our row) we must initially substract our current column by one to include the right amount of people for our column.
+We can determine the number of seats within the matrix (refer to the corresponding image for a nice visualization) by
+substracting the number of columns and rows against the column and row where we are seated, then multiplying the two
+differences together. However, because we are mindful of the people within our column (but not our row) we must
+initially substract our current column by one to include the right amount of seat for our column.
 
 """
