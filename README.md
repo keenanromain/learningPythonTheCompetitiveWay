@@ -4,7 +4,7 @@ Teaching myself Python 3.6 through competitive coding. Currently using <a href="
 
 ## Key Details
 
-I wanted to emphasize solving the given problems in as much of a Pythonic way as possible, so I've included explanations for those of us who routinely code closer to the iron. I've also included the question prompts for the casual reader.
+I wanted to emphasize solving the given problems in as much of a Pythonic way as possible, so I'm including explanations for those of us who routinely code closer to the iron. I've also included the question prompts for the casual reader.
 
 During my first week on CodeFights, I appeared among the top 20 coders worldwide which brought a smile to my face.
 

@@ -16,3 +16,15 @@ Input/Output
     [output] boolean
     Return true if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return false.
 """
+
+def almostIncreasingSequence(sequence):
+    err1 = err2 = False
+    for i in range(len(sequence)-1):
+        if sequence[i+1] - sequence[i] <= 0:
+            err1 = not err1
+            if err1 == False: return False
+    for i in range(len(sequence)-2):
+        if sequence[i+2] - sequence[i] <= 0:
+            err2 = not err2
+            if err2 == False: return False
+    return True
