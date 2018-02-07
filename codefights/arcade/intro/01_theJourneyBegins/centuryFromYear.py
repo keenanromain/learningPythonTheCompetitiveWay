@@ -17,3 +17,11 @@ Input/Output
 
 def centuryFromYear(year):
   return math.ceil(year/100)
+
+"""
+Reasoning~
+We can round up the floating point remainders to determine the century when a given year
+is divided by 100. Using the examples in thr prompt, there is no floating point remainder when
+year 1700 is divided by 100. Such a year would not be affected by the built-in ceiling method.
+However, 1905 when divided by 100 equals 19.05 which then would need to be round up due to the remainder.
+"""

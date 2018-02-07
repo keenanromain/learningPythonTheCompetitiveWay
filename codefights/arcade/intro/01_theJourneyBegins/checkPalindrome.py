@@ -19,3 +19,8 @@ Input/Output
 
 def checkPalindrome(inputString):
     return inputString == inputString[::-1]
+
+"""
+Reasoning~
+Reserve the input using list comprehension and check the resulting string against the original.
+"""
