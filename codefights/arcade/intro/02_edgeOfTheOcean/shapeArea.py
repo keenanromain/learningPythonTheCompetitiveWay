@@ -19,3 +19,10 @@ Input/Output
 
 def shapeArea(n):
     return n**2 + (n-1)**2
+
+"""
+Reasoning~
+The example above and the rate of change in the polygons in area.png give us valuable data; namely
+that the resulting output of our desired function seems to be the sum of two algebraic squares.
+The input value, n, results in one side of the addition with n minus one being the other.
+"""

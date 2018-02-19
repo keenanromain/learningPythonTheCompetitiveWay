@@ -28,3 +28,13 @@ def almostIncreasingSequence(sequence):
             err2 = not err2
             if err2 == False: return False
     return True
+
+"""
+Given the constraints for our program, we can run through the sequence twice checking the differences
+between indexes off by one position in the sequence and indexes off by two positions. For each loop,
+we are to have at most one discrepancy in the increasing order of elements which is why we have two
+error flags that are flipped whenever such a discrepancy is found. If the flags are ever flipped back
+to false it means that the discrepancy was triggered more than once which is grounds for returning
+False. Othewise, if we complete both loops without returning out early we know that we found an
+almost increasing sequence so we can return true. 
+"""

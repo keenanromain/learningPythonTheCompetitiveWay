@@ -17,3 +17,10 @@ Input/Output
 
 def adjacentElementsProduct(inputArray):
     return max([inputArray[i] * inputArray[i-1] for i in range(1,len(inputArray))])
+
+"""
+Reasoning~
+We can iterate over the input array and multiply each current value against it's predecessor,
+storing each result in a separate array. Once the looping is complete, the max method
+can be used to extract the biggest product found in the new array.
+"""
