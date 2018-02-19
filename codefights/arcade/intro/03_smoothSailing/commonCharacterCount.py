@@ -26,3 +26,11 @@ def commonCharacterCount(s1, s2):
                 count += 1
                 break
     return count
+
+    """
+    Reasoning~
+    Iterate over each character of each string through nested loops. If there ever is a match
+    between the character of the outer and inner loop, we know we can increment the count
+    variable. Next, to ensure we prohibit double counting we replace the character from
+    the matched string with empty space.
+    """
