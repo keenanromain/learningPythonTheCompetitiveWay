@@ -1,5 +1,7 @@
 """
-You are given an array of integers. On each move you are allowed to increase exactly one of its element by one. Find the minimal number of moves required to obtain a strictly increasing sequence from the input.
+You are given an array of integers. On each move you are allowed to increase exactly
+one of its element by one. Find the minimal number of moves required to obtain a
+strictly increasing sequence from the input.
 Example
 For inputArray = [1, 1, 1], the output should be
 arrayChange(inputArray) = 3.
@@ -10,8 +12,9 @@ Input/Output
     3 ≤ inputArray.length ≤ 105,
     -105 ≤ inputArray[i] ≤ 105.
     [output] integer
-    The minimal number of moves needed to obtain a strictly increasing sequence from inputArray.
-    It's guaranteed that for the given test cases the answer always fits signed 32-bit integer type.
+    The minimal number of moves needed to obtain a strictly increasing
+    sequence from inputArray. It's guaranteed that for the given test cases
+    the answer always fits signed 32-bit integer type.
 """
 
 def arrayChange(inputArray):
@@ -21,3 +24,11 @@ def arrayChange(inputArray):
             count += inputArray[i]+1 - inputArray[i+1]
             inputArray[i+1] = inputArray[i]+1
     return count
+
+    """
+    Reasoning~
+    When we run across a value in the array smaller than it's predecessor we need to calculate
+    the difference between what it should be (the previous element plus one) and what it 
+    actually is. This value can be stored in our count variable. We can set this array value
+    to what it should be and continue on looping in the array.
+    """

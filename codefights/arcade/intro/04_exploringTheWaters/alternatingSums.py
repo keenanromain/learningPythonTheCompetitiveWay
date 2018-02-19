@@ -18,3 +18,11 @@ def alternatingSums(a):
     for i in range(len(a)):
         ret[i&1] += a[i]
     return ret
+
+"""
+Reasoning~
+We can create a list to be returned, ret, of size two with zero initialized in each
+position. Next, we can run over the length of the array and sum the contents of each
+element against the even or odd position in ret. We're using a bit-wise operation to
+signify which element to use in list ret, but 'ret[i%2]' would have worked as well.
+"""

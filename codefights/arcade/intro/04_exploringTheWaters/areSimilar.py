@@ -1,5 +1,6 @@
 """
-Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of the arrays.
+Two arrays are called similar if one can be obtained from another by
+swapping at most one pair of elements in one of the arrays.
 Given two arrays a and b, check whether they are similar.
 Example
     For a = [1, 2, 3] and b = [1, 2, 3], the output should be
@@ -36,3 +37,13 @@ def areSimilar(a, b):
             err += 1
         i += 1
     return err <= 2
+
+    """
+    Reasoning~
+    If the elements are not the same sorted, we know right away that there is no possible way
+    to make one out of the other so we can return false. Next we can index through both
+    arrays and if we ever come across a discrepancy in the values, we can increment our error
+    variable. If we ever go above two increments to the error variable (two increments corresponds)
+    to one pair, we know we can return false for our problem. Otherwise, everything is in the
+    appropriate order.
+    """

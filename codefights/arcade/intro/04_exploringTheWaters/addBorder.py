@@ -23,3 +23,13 @@ Input/Output
 def addBorder(picture):
     line = "*" * (len(picture[0]) + 2)
     return [line]+["*" + pic + "*" for pic in picture]+[line]
+
+"""
+Reasoning~
+We first can set the top and bottom row of asteriks by finding the length of the input
+matrix's first row and adding the result to two. This width, n, when multiplied by the
+asterik tells Python to create the asterik n many times. Next, we can then create a new array
+from the contents of the input array and modify each element to have an asterik in front of
+and behind it each time. Lastly, we place this new array in the middle of the top and bottom
+row of asteriks and return the result.
+"""

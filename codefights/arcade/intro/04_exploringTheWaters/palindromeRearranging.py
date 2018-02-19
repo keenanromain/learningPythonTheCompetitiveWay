@@ -15,14 +15,26 @@ Input/Output
 """
 
 def palindromeRearranging(inputString):
-    arr = {}
+    d = {}
     for c in inputString:
-        if c not in arr:
-            arr[c] = 1
+        if c not in d:
+            d[c] = 1
         else:
-            arr[c] += 1
+            d[c] += 1
     odd = 0
-    for i in arr:
-        if arr[i] & 1:
+    for i in d:
+        if d[i] & 1:
             odd += 1
     return odd < 2
+
+    """
+    Reasoning~
+    We can use a dictionary to store the unique elements of the input string and increment
+    the number of repeated characters stored inside. Next, we can go through each element in
+    the dictionary and if ever the numerical value for each string key is odd we can increment
+    a counter. The purpose behind this is that when evaluating a palindrome, there should
+    only ever be at most one odd character that does not have a pair. This would be the 
+    character in the middle if the total length of the string wasn't even. So by having this
+    counter, we can see if there are ever more than one unqique elements (meaning no pair) and
+    if there is more than one, we can infer that there is no palindrome to be rearranged.
+    """
