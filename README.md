@@ -1,6 +1,6 @@
 # learningPythonTheCompetitiveWay
 
-Teaching myself Python 3.6 through competitive coding. Currently using <a href="https://codefights.com">codefights.com</a> with plans to explore <a href="https://www.codewars.com">Codewars</a> and <a href="https://www.hackerrank.com">HackerRank</a> in the future.
+Teaching myself Python 3.6 through competitive coding. I've used <a href="https://codefights.com">CodeFights</a> (now branded as CodeSignal) in the past and I'm currently working throught the problem sets on <a href="https://www.codewars.com">Codewars</a>. <a href="https://www.hackerrank.com">HackerRank</a> is planned next.
 
 ## Key Details
 
